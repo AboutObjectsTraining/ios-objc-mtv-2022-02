@@ -2,11 +2,11 @@
 <a href="https://www.aboutobjects.com"><img src="ao-logo.png" height=18 style="height: 18px;"/></a>
 </div>
 
-# objc-ios-mtv-2021-09
+# objc-ios-mtv-2022-02
 
 ## iOS Development in Objective-C
 
-Mountain View (Remote Class) — September 13, 2021
+Mountain View (Remote Class) — February 2, 2022
 
 
 ### Part 1: Objective-C Programming
@@ -35,5 +35,5 @@ Available under the MIT license. See the LICENSE file for more info.
 
 ___
 
-_Copyright &copy; 2021 [About Objects](https://www.aboutobjects.com). All rights reserved._
+_Copyright &copy; 2022 [About Objects](https://www.aboutobjects.com). All rights reserved._
 
