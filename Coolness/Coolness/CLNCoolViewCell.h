@@ -3,10 +3,8 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface CLNCoolViewCell : UIView
 
-@end
+@property (copy, nonatomic) NSString *text;
 
-NS_ASSUME_NONNULL_END
+@end
