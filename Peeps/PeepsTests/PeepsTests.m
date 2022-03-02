@@ -8,6 +8,11 @@
 
 @end
 
+// Declaring methods in a Category
+@interface PeepsTests (MyAdditions)
+- (void)bark;
+@end
+
 @implementation PeepsTests
 
 - (void)testCreatePerson {
@@ -33,6 +38,29 @@
 - (void)testFactoryMethod {
     Person *person = [Person personWithFirstName:@"Fred" lastName:@"Smith" age:42];
     NSLog(@"%@", person);
+}
+
+- (void)testBark {
+    id fred = [Person personWithFirstName:@"Fred" lastName:@"Smith" age:42];
+    Dog *rover = [[Dog alloc] init];
+    [fred setDog:rover];
+    
+    SEL barkSelector = @selector(bark);
+    
+    if ([fred respondsToSelector:barkSelector]) {
+        [fred performSelector:barkSelector];
+    }
+    
+//    [fred bark];
+    
+    NSLog(@"%@", fred);
+}
+
+- (void)testCopyingBehavior {
+    Dog *rover = [[Dog alloc] init];
+    Dog *cloneOfRover = [rover copy];
+    NSLog(@"%@", cloneOfRover);
+    [cloneOfRover bark];
 }
 
 @end

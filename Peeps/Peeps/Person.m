@@ -2,8 +2,11 @@
 // See LICENSE.txt for this project's licensing information.
 
 #import "Person.h"
+#import "Dog.h"
 
 @implementation Person
+
+// MARK: - Initializers
 
 // Convenience initializer. May call a designated initializer or another convenience initalizer.
 - (instancetype)initWithFirstName:(NSString *)aFirstName
@@ -13,8 +16,9 @@
 
 // Designated initializer. Must call super.
 - (instancetype)initWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName age:(NSInteger)anAge {
-    self = [super init];
-    if (self == nil) return nil;
+    if (!(self = [super init])) return nil;
+    
+    // Set ivars
     
     _firstName = aFirstName;
     _lastName = aLastName;
@@ -29,6 +33,24 @@
 + (instancetype)personWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName age:(NSInteger)anAge {
     return [[self alloc] initWithFirstName:aFirstName lastName:aLastName age:anAge];
 }
+
+// MARK: - Forwarding
+
+- (BOOL)respondsToSelector:(SEL)aSelector {
+    if ([super respondsToSelector:aSelector]) {
+        return YES;
+    }
+    return [[self dog] respondsToSelector:aSelector];
+}
+
+- (id)forwardingTargetForSelector:(SEL)aSelector {
+    if ([[self dog] respondsToSelector:aSelector]) {
+        return [self dog];
+    }
+    return nil;
+}
+
+// MARK: - Accessors
 
 - (NSString *)firstName {
     return _firstName;
@@ -49,6 +71,13 @@
 }
 - (void)setAge:(NSInteger)newValue {
     _age = newValue;
+}
+
+- (Dog *)dog {
+    return _dog;
+}
+- (void)setDog:(Dog *)newValue {
+    _dog = newValue;
 }
 
 - (NSString *)description

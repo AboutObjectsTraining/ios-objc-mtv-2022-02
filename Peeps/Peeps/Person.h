@@ -9,11 +9,13 @@
 //    int age;
 //};
 
+@class Dog;
 
 @interface Person : NSObject {
     NSString *_firstName;
     NSString *_lastName;
     NSInteger _age;
+    Dog *_dog;
 }
 
 - (instancetype)initWithFirstName:(NSString *)aFirstName
@@ -35,6 +37,9 @@
 
 - (NSInteger)age;
 - (void)setAge:(NSInteger)newValue;
+
+- (Dog *)dog;
+- (void)setDog:(Dog *)newValue;
 
 @end
 
