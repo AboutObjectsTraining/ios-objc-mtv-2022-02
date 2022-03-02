@@ -20,8 +20,8 @@
     
     // Set ivars
     
-    _firstName = aFirstName;
-    _lastName = aLastName;
+    _firstName = [aFirstName copy];
+    _lastName = [aLastName copy];
     _age = anAge;
     
     // Okay to call our own methods here.
@@ -40,49 +40,25 @@
     if ([super respondsToSelector:aSelector]) {
         return YES;
     }
-    return [[self dog] respondsToSelector:aSelector];
+    return [self.dog respondsToSelector:aSelector];
 }
 
 - (id)forwardingTargetForSelector:(SEL)aSelector {
-    if ([[self dog] respondsToSelector:aSelector]) {
-        return [self dog];
+    if ([self.dog respondsToSelector:aSelector]) {
+        return self.dog;
     }
     return nil;
 }
 
 // MARK: - Accessors
 
-- (NSString *)firstName {
-    return _firstName;
-}
-- (void)setFirstName:(NSString *)newValue {
-    _firstName = newValue; // TODO: memory management and mutability issue here.
-}
-
-- (NSString *)lastName {
-    return _lastName;
-}
-- (void)setLastName:(NSString *)newValue {
-    _lastName = newValue;
-}
-
-- (NSInteger)age {
-    return _age;
-}
-- (void)setAge:(NSInteger)newValue {
-    _age = newValue;
-}
-
-- (Dog *)dog {
-    return _dog;
-}
-- (void)setDog:(Dog *)newValue {
-    _dog = newValue;
+- (NSString *)fullName {
+    return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
 }
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"%@ %@, %ld", [self firstName], [self lastName], [self age]];
+    return [NSString stringWithFormat:@"%@ %@, %ld", self.firstName, self.lastName, self.age];
 }
 
 @end
