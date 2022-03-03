@@ -67,16 +67,18 @@ const UIEdgeInsets CLNTextInsets = {
 }
 
 - (void)configureBounceAnimationWithSize:(CGSize)size {
+    typeof(self) __weak weakSelf = self;
     [UIView modifyAnimationsWithRepeatCount:5 autoreverses:YES animations:^{
         CGAffineTransform translation = CGAffineTransformMakeTranslation(size.width, size.height);
-        self.transform = CGAffineTransformRotate(translation, M_PI_2);
+        weakSelf.transform = CGAffineTransformRotate(translation, M_PI_2);
     }];
 }
 
 - (void)animateBounceWithDuration:(NSTimeInterval)duration size:(CGSize)size {
+    typeof(self) __weak weakSelf = self;
     [UIView animateWithDuration:duration
-                     animations:^{ [self configureBounceAnimationWithSize:size]; }
-                     completion:^(BOOL finished) { self.transform = CGAffineTransformIdentity; }];
+                     animations:^{ [weakSelf configureBounceAnimationWithSize:size]; }
+                     completion:^(BOOL finished) { weakSelf.transform = CGAffineTransformIdentity; }];
 }
 
 // MARK: - Drawing and resizing

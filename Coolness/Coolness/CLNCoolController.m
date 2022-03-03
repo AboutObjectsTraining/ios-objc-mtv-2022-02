@@ -4,7 +4,7 @@
 #import "CLNCoolController.h"
 #import "CLNCoolViewCell.h"
 
-@interface CLNCoolController ()
+@interface CLNCoolController () <UITextFieldDelegate>
 @property (strong, nonatomic) UIView *contentView;
 @property (strong, nonatomic) UITextField *textField;
 @end
@@ -17,6 +17,12 @@
     newCell.text = self.textField.text;
     newCell.backgroundColor = UIColor.systemBlueColor;
     [self.contentView addSubview:newCell];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    NSLog(@"In %s", __func__);
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (void)loadView {
@@ -45,6 +51,8 @@
     [accessoryView addSubview:self.textField];
     self.textField.borderStyle = UITextBorderStyleRoundedRect;
     
+    self.textField.delegate = self;
+    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     [accessoryView addSubview:button];
     [button setTitle:@"Add Cell" forState:UIControlStateNormal];
@@ -68,17 +76,10 @@
     view2.backgroundColor = UIColor.orangeColor;
 }
 
-//- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    UITouch *touch = touches.anyObject;
-//    if (touch.view == self.view) return;
-//    
-//    CGPoint currLocation = [touch locationInView:nil];
-//    CGPoint prevLocation = [touch previousLocationInView:nil];
-//    
-//    CGFloat deltaX = currLocation.x - prevLocation.x;
-//    CGFloat deltaY = currLocation.y - prevLocation.y;
-//    
-//    touch.view.frame = CGRectOffset(touch.view.frame, deltaX, deltaY);
-//}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"In %s", __func__);
+//    [self.textField resignFirstResponder];
+    [super touchesBegan:touches withEvent:event];
+}
 
 @end
