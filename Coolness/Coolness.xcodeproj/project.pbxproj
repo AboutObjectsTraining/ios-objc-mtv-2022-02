@@ -15,7 +15,18 @@
 		B4F1A76627CEFEDE00216302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F1A76427CEFEDE00216302 /* LaunchScreen.storyboard */; };
 		B4F1A76927CEFEDE00216302 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F1A76827CEFEDE00216302 /* main.m */; };
 		B4F1A77327D0058000216302 /* CLNCoolViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F1A77227D0058000216302 /* CLNCoolViewCell.m */; };
+		B4F1A77B27D137B200216302 /* BlockLiteralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F1A77A27D137B200216302 /* BlockLiteralTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4F1A77C27D137B200216302 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4F1A74B27CEFEDB00216302 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4F1A75227CEFEDB00216302;
+			remoteInfo = Coolness;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B4F1A75327CEFEDB00216302 /* Coolness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coolness.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,10 +43,19 @@
 		B4F1A76827CEFEDE00216302 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B4F1A77127D0058000216302 /* CLNCoolViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLNCoolViewCell.h; sourceTree = "<group>"; };
 		B4F1A77227D0058000216302 /* CLNCoolViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNCoolViewCell.m; sourceTree = "<group>"; };
+		B4F1A77827D137B100216302 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4F1A77A27D137B200216302 /* BlockLiteralTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockLiteralTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B4F1A75027CEFEDB00216302 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F1A77527D137B100216302 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				B4F1A75527CEFEDB00216302 /* Coolness */,
+				B4F1A77927D137B200216302 /* UnitTests */,
 				B4F1A75427CEFEDB00216302 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				B4F1A75327CEFEDB00216302 /* Coolness.app */,
+				B4F1A77827D137B100216302 /* UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +103,14 @@
 			path = Coolness;
 			sourceTree = "<group>";
 		};
+		B4F1A77927D137B200216302 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4F1A77A27D137B200216302 /* BlockLiteralTests.m */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,6 +131,24 @@
 			productReference = B4F1A75327CEFEDB00216302 /* Coolness.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B4F1A77727D137B100216302 /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4F1A77E27D137B200216302 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				B4F1A77427D137B100216302 /* Sources */,
+				B4F1A77527D137B100216302 /* Frameworks */,
+				B4F1A77627D137B100216302 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4F1A77D27D137B200216302 /* PBXTargetDependency */,
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = B4F1A77827D137B100216302 /* UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -112,6 +160,10 @@
 				TargetAttributes = {
 					B4F1A75227CEFEDB00216302 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					B4F1A77727D137B100216302 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B4F1A75227CEFEDB00216302;
 					};
 				};
 			};
@@ -129,6 +181,7 @@
 			projectRoot = "";
 			targets = (
 				B4F1A75227CEFEDB00216302 /* Coolness */,
+				B4F1A77727D137B100216302 /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +194,13 @@
 				B4F1A76627CEFEDE00216302 /* LaunchScreen.storyboard in Resources */,
 				B4F1A76327CEFEDD00216302 /* Assets.xcassets in Resources */,
 				B4F1A76127CEFEDB00216302 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F1A77627D137B100216302 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +219,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B4F1A77427D137B100216302 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4F1A77B27D137B200216302 /* BlockLiteralTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4F1A77D27D137B200216302 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4F1A75227CEFEDB00216302 /* Coolness */;
+			targetProxy = B4F1A77C27D137B200216302 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B4F1A75F27CEFEDB00216302 /* Main.storyboard */ = {
@@ -345,6 +421,38 @@
 			};
 			name = Release;
 		};
+		B4F1A77F27D137B200216302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coolness.app/Coolness";
+			};
+			name = Debug;
+		};
+		B4F1A78027D137B200216302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coolness.app/Coolness";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -362,6 +470,15 @@
 			buildConfigurations = (
 				B4F1A76D27CEFEDE00216302 /* Debug */,
 				B4F1A76E27CEFEDE00216302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4F1A77E27D137B200216302 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4F1A77F27D137B200216302 /* Debug */,
+				B4F1A78027D137B200216302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
