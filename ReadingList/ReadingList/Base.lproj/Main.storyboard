@@ -27,70 +27,40 @@
         <scene sceneID="11L-1s-cGY">
             <objects>
                 <tableViewController id="1t0-dd-pqX" customClass="RELReadingListController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Y7P-Bt-xlB">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Y7P-Bt-xlB">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <sections>
-                            <tableViewSection id="bbL-2N-mcn">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="uq5-6V-Fq6" detailTextLabel="Exf-rV-Ofp" rowHeight="72" style="IBUITableViewCellStyleSubtitle" id="1A4-m6-n9Z">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="72"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1A4-m6-n9Z" id="Qva-af-MaL">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="72"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="uq5-6V-Fq6" detailTextLabel="Exf-rV-Ofp" rowHeight="72" style="IBUITableViewCellStyleSubtitle" id="1A4-m6-n9Z">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="72"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1A4-m6-n9Z" id="Qva-af-MaL">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="72"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="A Midsummer Night's Dream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uq5-6V-Fq6">
+                                            <rect key="frame" x="20" y="14.999999999999998" width="219" height="20.333333333333332"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="A Midsummer Night's Dream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uq5-6V-Fq6">
-                                                    <rect key="frame" x="20" y="14.999999999999998" width="219" height="20.333333333333332"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="1601 William Shakespeare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Exf-rV-Ofp">
-                                                    <rect key="frame" x="20" y="38.333333333333329" width="167.33333333333334" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="XHz-4r-bHF" kind="show" id="Wpc-IH-Dw7"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="c9u-11-9pf" detailTextLabel="wTg-lO-6rg" rowHeight="72" style="IBUITableViewCellStyleSubtitle" id="YrS-uM-91D">
-                                        <rect key="frame" x="0.0" y="116.66666603088379" width="390" height="72"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YrS-uM-91D" id="Pbr-Qg-ZxL">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="72"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="1601 William Shakespeare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Exf-rV-Ofp">
+                                            <rect key="frame" x="20" y="38.333333333333329" width="167.33333333333334" height="17"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="The Tempest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c9u-11-9pf">
-                                                    <rect key="frame" x="19.999999999999993" y="14.999999999999998" width="99.333333333333329" height="20.333333333333332"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="1601 William Shakespeare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wTg-lO-6rg">
-                                                    <rect key="frame" x="20" y="38.333333333333329" width="167.33333333333334" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="XHz-4r-bHF" kind="show" id="ND2-2q-dN9"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="XHz-4r-bHF" kind="show" id="Wpc-IH-Dw7"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="1t0-dd-pqX" id="pnA-3N-lnE"/>
                             <outlet property="delegate" destination="1t0-dd-pqX" id="EBn-su-dzu"/>
@@ -370,12 +340,12 @@
                     <navigationItem key="navigationItem" title="Edit Book" id="TyY-pj-4ET">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="MPD-fG-Qo7">
                             <connections>
-                                <segue destination="giM-CV-J9w" kind="unwind" unwindAction="cancel:" id="7qy-nM-zZ5"/>
+                                <segue destination="giM-CV-J9w" kind="unwind" unwindAction="cancel:" id="aE9-7P-OhS"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="pNp-4a-e5g">
                             <connections>
-                                <segue destination="giM-CV-J9w" kind="unwind" unwindAction="done:" id="uMp-SI-aPm"/>
+                                <segue destination="giM-CV-J9w" kind="unwind" unwindAction="done:" id="dAj-uy-qcq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -404,9 +374,6 @@
             <point key="canvasLocation" x="1090.7692307692307" y="44.7867298578199"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="ND2-2q-dN9"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
