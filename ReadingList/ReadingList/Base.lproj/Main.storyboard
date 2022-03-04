@@ -32,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="uq5-6V-Fq6" detailTextLabel="Exf-rV-Ofp" rowHeight="72" style="IBUITableViewCellStyleSubtitle" id="1A4-m6-n9Z">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Book Cell" textLabel="uq5-6V-Fq6" detailTextLabel="Exf-rV-Ofp" rowHeight="72" style="IBUITableViewCellStyleSubtitle" id="1A4-m6-n9Z">
                                 <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1A4-m6-n9Z" id="Qva-af-MaL">
@@ -67,8 +67,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Reading List" id="htM-Ug-uwL"/>
+                    <connections>
+                        <outlet property="storeController" destination="Xil-ad-RJy" id="fIX-XV-6Zs"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j64-M5-jxt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="Xil-ad-RJy" customClass="RLMStoreController"/>
             </objects>
             <point key="canvasLocation" x="-660" y="45"/>
         </scene>
