@@ -16,6 +16,7 @@
 		B4F1A7BC27D17AD200216302 /* CLNCoolViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F1A7B827D17AD200216302 /* CLNCoolViewCell.m */; };
 		B4F1A7BD27D17AD200216302 /* CLNSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F1A7B927D17AD200216302 /* CLNSceneDelegate.m */; };
 		B4F1A7BF27D17CFD00216302 /* CoolStuff.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F1A7BE27D17CFD00216302 /* CoolStuff.xib */; };
+		B4F1A7C227D1A4AA00216302 /* CLNCoolView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F1A7C127D1A4AA00216302 /* CLNCoolView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		B4F1A7B827D17AD200216302 /* CLNCoolViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNCoolViewCell.m; sourceTree = "<group>"; };
 		B4F1A7B927D17AD200216302 /* CLNSceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNSceneDelegate.m; sourceTree = "<group>"; };
 		B4F1A7BE27D17CFD00216302 /* CoolStuff.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoolStuff.xib; sourceTree = "<group>"; };
+		B4F1A7C027D1A4AA00216302 /* CLNCoolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLNCoolView.h; sourceTree = "<group>"; };
+		B4F1A7C127D1A4AA00216302 /* CLNCoolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNCoolView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				B4F1A7B927D17AD200216302 /* CLNSceneDelegate.m */,
 				B4F1A7B627D17AD200216302 /* CLNCoolController.h */,
 				B4F1A7B427D17AD200216302 /* CLNCoolController.m */,
+				B4F1A7C027D1A4AA00216302 /* CLNCoolView.h */,
+				B4F1A7C127D1A4AA00216302 /* CLNCoolView.m */,
 				B4F1A7B327D17AD200216302 /* CLNCoolViewCell.h */,
 				B4F1A7B827D17AD200216302 /* CLNCoolViewCell.m */,
 				B4F1A7BE27D17CFD00216302 /* CoolStuff.xib */,
@@ -160,6 +165,7 @@
 				B4F1A7BA27D17AD200216302 /* CLNAppDelegate.m in Sources */,
 				B4F1A7BD27D17AD200216302 /* CLNSceneDelegate.m in Sources */,
 				B4F1A7A027D1799D00216302 /* main.m in Sources */,
+				B4F1A7C227D1A4AA00216302 /* CLNCoolView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

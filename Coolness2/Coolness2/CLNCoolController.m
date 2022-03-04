@@ -4,27 +4,10 @@
 #import "CLNCoolController.h"
 #import "CLNCoolViewCell.h"
 
-@interface CLNCoolController () <UITextFieldDelegate>
-@property (strong, nonatomic) IBOutlet UIView *contentView;
-@property (strong, nonatomic) IBOutlet UIView *accessoryView;
-@property (strong, nonatomic) IBOutlet UITextField *textField;
+@interface CLNCoolController ()
 @end
 
 @implementation CLNCoolController
-
-- (IBAction)addCell {
-    NSLog(@"In %s", __func__);
-    CLNCoolViewCell *newCell = [[CLNCoolViewCell alloc] init];
-    newCell.text = self.textField.text;
-    newCell.backgroundColor = UIColor.systemBlueColor;
-    [self.contentView addSubview:newCell];
-}
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    NSLog(@"In %s", __func__);
-    [textField resignFirstResponder];
-    return YES;
-}
 
 //- (void)loadView1 {
 //    [NSBundle.mainBundle loadNibNamed:@"CoolStuff" owner:self options:nil];

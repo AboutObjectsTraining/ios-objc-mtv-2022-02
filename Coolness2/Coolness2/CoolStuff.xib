@@ -10,14 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLNCoolController">
             <connections>
-                <outlet property="accessoryView" destination="LAR-Bg-OdX" id="mnU-Jg-U07"/>
-                <outlet property="contentView" destination="xuX-Zu-Hkz" id="jea-q0-YyP"/>
-                <outlet property="textField" destination="ews-XT-thK" id="wfE-Ln-EFE"/>
                 <outlet property="view" destination="ZcF-Db-JAr" id="fyH-Ib-Lu3"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="ZcF-Db-JAr" userLabel="Background View">
+        <view contentMode="scaleToFill" id="ZcF-Db-JAr" customClass="CLNCoolView">
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -31,7 +28,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             <connections>
-                                <outlet property="delegate" destination="-1" id="5HY-qZ-U3u"/>
+                                <outlet property="delegate" destination="ZcF-Db-JAr" id="1c1-bb-Mzk"/>
                             </connections>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prz-Zz-7Ei">
@@ -40,7 +37,7 @@
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="filled" title="Add Cell"/>
                             <connections>
-                                <action selector="addCell" destination="-1" eventType="touchUpInside" id="muY-cg-uMS"/>
+                                <action selector="addCell" destination="ZcF-Db-JAr" eventType="touchUpInside" id="Kdr-KW-AT7"/>
                             </connections>
                         </button>
                     </subviews>
@@ -78,6 +75,10 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="t0v-b6-kLg"/>
             <color key="backgroundColor" systemColor="systemBrownColor"/>
+            <connections>
+                <outlet property="contentView" destination="xuX-Zu-Hkz" id="3Ek-Po-GqY"/>
+                <outlet property="textField" destination="ews-XT-thK" id="JZi-ok-CVk"/>
+            </connections>
             <point key="canvasLocation" x="175.38461538461539" y="31.990521327014218"/>
         </view>
     </objects>
