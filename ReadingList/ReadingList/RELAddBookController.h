@@ -3,10 +3,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class RLMBook;
+NS_ASSUME_NONNULL_BEGIN
 
-@interface RELViewBookController : UITableViewController
-
-@property (strong, nonatomic) RLMBook *book;
+@interface RELAddBookController : UITableViewController
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -5,7 +5,7 @@
 
 @class RLMBook;
 
-@interface RELViewBookController : UITableViewController
+@interface RELEditBookController : UITableViewController
 
 @property (strong, nonatomic) RLMBook *book;
 

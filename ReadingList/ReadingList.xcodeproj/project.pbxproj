@@ -25,6 +25,8 @@
 		B4BB672427D2CD89005CA19A /* RLMBook.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BB671727D2CD88005CA19A /* RLMBook.m */; };
 		B4BB672527D2CD89005CA19A /* RLMAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BB671827D2CD88005CA19A /* RLMAuthor.m */; };
 		B4BB672627D2CD89005CA19A /* RLMReadingList.h in Headers */ = {isa = PBXBuildFile; fileRef = B4BB671927D2CD89005CA19A /* RLMReadingList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4BB672927D2DF0E005CA19A /* RELEditBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BB672827D2DF0E005CA19A /* RELEditBookController.m */; };
+		B4BB672C27D2E9E3005CA19A /* RELAddBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BB672B27D2E9E3005CA19A /* RELAddBookController.m */; };
 		B4F1A7D127D2863B00216302 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F1A7D027D2863B00216302 /* AppDelegate.m */; };
 		B4F1A7D427D2863B00216302 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F1A7D327D2863B00216302 /* SceneDelegate.m */; };
 		B4F1A7DA27D2863B00216302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F1A7D827D2863B00216302 /* Main.storyboard */; };
@@ -77,6 +79,10 @@
 		B4BB671727D2CD88005CA19A /* RLMBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMBook.m; sourceTree = "<group>"; };
 		B4BB671827D2CD88005CA19A /* RLMAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMAuthor.m; sourceTree = "<group>"; };
 		B4BB671927D2CD89005CA19A /* RLMReadingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMReadingList.h; sourceTree = "<group>"; };
+		B4BB672727D2DF0E005CA19A /* RELEditBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELEditBookController.h; sourceTree = "<group>"; };
+		B4BB672827D2DF0E005CA19A /* RELEditBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELEditBookController.m; sourceTree = "<group>"; };
+		B4BB672A27D2E9E3005CA19A /* RELAddBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELAddBookController.h; sourceTree = "<group>"; };
+		B4BB672B27D2E9E3005CA19A /* RELAddBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELAddBookController.m; sourceTree = "<group>"; };
 		B4F1A7CC27D2863B00216302 /* ReadingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F1A7CF27D2863B00216302 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4F1A7D027D2863B00216302 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -156,6 +162,10 @@
 				B4F1A7D327D2863B00216302 /* SceneDelegate.m */,
 				B4BB668927D2A684005CA19A /* RELReadingListController.h */,
 				B4BB668A27D2A684005CA19A /* RELReadingListController.m */,
+				B4BB672A27D2E9E3005CA19A /* RELAddBookController.h */,
+				B4BB672B27D2E9E3005CA19A /* RELAddBookController.m */,
+				B4BB672727D2DF0E005CA19A /* RELEditBookController.h */,
+				B4BB672827D2DF0E005CA19A /* RELEditBookController.m */,
 				B4BB668C27D2ADCA005CA19A /* RELViewBookController.h */,
 				B4BB668D27D2ADCA005CA19A /* RELViewBookController.m */,
 				B4F1A7D827D2863B00216302 /* Main.storyboard */,
@@ -301,9 +311,11 @@
 			files = (
 				B4BB668E27D2ADCA005CA19A /* RELViewBookController.m in Sources */,
 				B4F1A7D127D2863B00216302 /* AppDelegate.m in Sources */,
+				B4BB672927D2DF0E005CA19A /* RELEditBookController.m in Sources */,
 				B4F1A7E227D2863E00216302 /* main.m in Sources */,
 				B4BB668B27D2A684005CA19A /* RELReadingListController.m in Sources */,
 				B4F1A7D427D2863B00216302 /* SceneDelegate.m in Sources */,
+				B4BB672C27D2E9E3005CA19A /* RELAddBookController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
